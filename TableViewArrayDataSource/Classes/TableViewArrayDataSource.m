@@ -22,6 +22,17 @@
     return self;
 }
 
+- (id)initWithDataSourceArray:(NSArray *)array tableView:(UITableView *)tableView delegate:(id <TableViewArrayDataSourceDelegate>)dataSourceDelegate
+{
+    self = [super init];
+    if (self) {
+        self.dataSourceArray = array;
+        self.delegate = dataSourceDelegate;
+        tableView.dataSource = self;
+    }
+    return self;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [delegate tableView:tableView cellForRowAtIndexPath:indexPath data:[dataSourceArray objectAtIndex:indexPath.row]];
 }

@@ -40,7 +40,7 @@
 		B20C4E821651FDCD00AC0E30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		B20C4E981651FF1600AC0E30 /* TableViewArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewArrayDataSource.h; path = Classes/TableViewArrayDataSource.h; sourceTree = "<group>"; };
 		B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewArrayDataSource.m; path = Classes/TableViewArrayDataSource.m; sourceTree = "<group>"; };
-		B20C4E9B1652000300AC0E30 /* TableVieArrayDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableVieArrayDataSourceDelegate.h; path = Classes/TableVieArrayDataSourceDelegate.h; sourceTree = "<group>"; };
+		B20C4E9B1652000300AC0E30 /* TableViewArrayDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableViewArrayDataSourceDelegate.h; path = Classes/TableViewArrayDataSourceDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 			children = (
 				B20C4E981651FF1600AC0E30 /* TableViewArrayDataSource.h */,
 				B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */,
-				B20C4E9B1652000300AC0E30 /* TableVieArrayDataSourceDelegate.h */,
+				B20C4E9B1652000300AC0E30 /* TableViewArrayDataSourceDelegate.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

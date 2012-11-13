@@ -19,13 +19,10 @@
     [super viewDidLoad];
     
     NSArray *array = [NSArray arrayWithObjects:@"Apple", @"Banana", @"Orange", nil];
-    TableViewArrayDataSource *dataSource = [[TableViewArrayDataSource alloc] initWithDataSourceArray:array];
-    dataSource.delegate = self;
     
-    tableView.delegate = self;
-    tableView.dataSource = dataSource;
-    
-    
+    tableView.delegate = self;  
+    [[TableViewArrayDataSource alloc] initWithDataSourceArray:array tableView:tableView delegate:self];    
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath data:(id)data {

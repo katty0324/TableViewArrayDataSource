@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TableViewArrayDataSource.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, TableVieArrayDataSourceDelegate>{
+@interface ViewController : UIViewController <UITableViewDelegate, TableViewArrayDataSourceDelegate>{
     
     IBOutlet UITableView *tableView;
     

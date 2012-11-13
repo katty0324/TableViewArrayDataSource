@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol TableVieArrayDataSourceDelegate <NSObject>
+@protocol TableViewArrayDataSourceDelegate <NSObject>
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath data:(id)data;
 
