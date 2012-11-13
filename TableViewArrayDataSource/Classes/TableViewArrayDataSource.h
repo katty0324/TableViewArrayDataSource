@@ -6,6 +6,7 @@
 //  Copyright (c) 2012年 Kataoka Naoyuki. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "TableViewArrayDataSourceDelegate.h"
 

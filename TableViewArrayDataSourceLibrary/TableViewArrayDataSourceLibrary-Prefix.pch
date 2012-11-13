@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TableViewArrayDataSourceLibrary' target in the 'TableViewArrayDataSourceLibrary' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

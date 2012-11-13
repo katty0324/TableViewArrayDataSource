@@ -19,6 +19,13 @@
 		B20C4E801651FDCD00AC0E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C4E7F1651FDCD00AC0E30 /* ViewController.m */; };
 		B20C4E831651FDCD00AC0E30 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C4E811651FDCD00AC0E30 /* ViewController.xib */; };
 		B20C4E9A1651FF1600AC0E30 /* TableViewArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */; };
+		B20C4EBD165215F000AC0E30 /* TableViewArrayDataSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C4EBC165215F000AC0E30 /* TableViewArrayDataSourceDelegate.m */; };
+		B20C4EC11652161200AC0E30 /* TableViewArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B20C4E981651FF1600AC0E30 /* TableViewArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B20C4EC21652161200AC0E30 /* TableViewArrayDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B20C4E9B1652000300AC0E30 /* TableViewArrayDataSourceDelegate.h */; settings = {ATTRIBUTES = (); }; };
+		B20C4EC31652162000AC0E30 /* TableViewArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */; };
+		B20C4ECA1652167B00AC0E30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C4E681651FDCD00AC0E30 /* Foundation.framework */; };
+		B20C4ECB1652168700AC0E30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C4E661651FDCD00AC0E30 /* UIKit.framework */; };
+		B20C4ECC165216A600AC0E30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C4E6A1651FDCD00AC0E30 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,17 @@
 		B20C4E981651FF1600AC0E30 /* TableViewArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewArrayDataSource.h; path = Classes/TableViewArrayDataSource.h; sourceTree = "<group>"; };
 		B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewArrayDataSource.m; path = Classes/TableViewArrayDataSource.m; sourceTree = "<group>"; };
 		B20C4E9B1652000300AC0E30 /* TableViewArrayDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableViewArrayDataSourceDelegate.h; path = Classes/TableViewArrayDataSourceDelegate.h; sourceTree = "<group>"; };
+		B20C4EA4165215BE00AC0E30 /* TableViewArrayDataSourceLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewArrayDataSourceLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		B20C4EA5165215BE00AC0E30 /* TableViewArrayDataSourceLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewArrayDataSourceLibrary.h; sourceTree = "<group>"; };
+		B20C4EA7165215BE00AC0E30 /* TableViewArrayDataSourceLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewArrayDataSourceLibrary.m; sourceTree = "<group>"; };
+		B20C4EB1165215EF00AC0E30 /* libTableViewArrayDataSourceDelegate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTableViewArrayDataSourceDelegate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20C4EB2165215EF00AC0E30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		B20C4EB5165215F000AC0E30 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B20C4EB6165215F000AC0E30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B20C4EB7165215F000AC0E30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B20C4EBA165215F000AC0E30 /* TableViewArrayDataSourceDelegate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewArrayDataSourceDelegate-Prefix.pch"; sourceTree = "<group>"; };
+		B20C4EBB165215F000AC0E30 /* TableViewArrayDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewArrayDataSourceDelegate.h; sourceTree = "<group>"; };
+		B20C4EBC165215F000AC0E30 /* TableViewArrayDataSourceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewArrayDataSourceDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B20C4EAE165215EF00AC0E30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C4ECB1652168700AC0E30 /* UIKit.framework in Frameworks */,
+				B20C4ECC165216A600AC0E30 /* CoreGraphics.framework in Frameworks */,
+				B20C4ECA1652167B00AC0E30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				B20C4E6C1651FDCD00AC0E30 /* TableViewArrayDataSource */,
+				B20C4EA2165215BE00AC0E30 /* TableViewArrayDataSourceLibrary */,
+				B20C4EB8165215F000AC0E30 /* TableViewArrayDataSourceDelegate */,
 				B20C4E651651FDCD00AC0E30 /* Frameworks */,
 				B20C4E631651FDCD00AC0E30 /* Products */,
 			);
@@ -70,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B20C4E621651FDCD00AC0E30 /* TableViewArrayDataSource.app */,
+				B20C4EB1165215EF00AC0E30 /* libTableViewArrayDataSourceDelegate.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +111,8 @@
 				B20C4E661651FDCD00AC0E30 /* UIKit.framework */,
 				B20C4E681651FDCD00AC0E30 /* Foundation.framework */,
 				B20C4E6A1651FDCD00AC0E30 /* CoreGraphics.framework */,
+				B20C4EB2165215EF00AC0E30 /* Cocoa.framework */,
+				B20C4EB4165215F000AC0E30 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,7 +155,65 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		B20C4EA2165215BE00AC0E30 /* TableViewArrayDataSourceLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4EA5165215BE00AC0E30 /* TableViewArrayDataSourceLibrary.h */,
+				B20C4EA7165215BE00AC0E30 /* TableViewArrayDataSourceLibrary.m */,
+				B20C4EA3165215BE00AC0E30 /* Supporting Files */,
+			);
+			path = TableViewArrayDataSourceLibrary;
+			sourceTree = "<group>";
+		};
+		B20C4EA3165215BE00AC0E30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4EA4165215BE00AC0E30 /* TableViewArrayDataSourceLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20C4EB4165215F000AC0E30 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4EB5165215F000AC0E30 /* AppKit.framework */,
+				B20C4EB6165215F000AC0E30 /* CoreData.framework */,
+				B20C4EB7165215F000AC0E30 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B20C4EB8165215F000AC0E30 /* TableViewArrayDataSourceDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4EBB165215F000AC0E30 /* TableViewArrayDataSourceDelegate.h */,
+				B20C4EBC165215F000AC0E30 /* TableViewArrayDataSourceDelegate.m */,
+				B20C4EB9165215F000AC0E30 /* Supporting Files */,
+			);
+			path = TableViewArrayDataSourceDelegate;
+			sourceTree = "<group>";
+		};
+		B20C4EB9165215F000AC0E30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4EBA165215F000AC0E30 /* TableViewArrayDataSourceDelegate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B20C4EAF165215EF00AC0E30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C4EC11652161200AC0E30 /* TableViewArrayDataSource.h in Headers */,
+				B20C4EC21652161200AC0E30 /* TableViewArrayDataSourceDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B20C4E611651FDCD00AC0E30 /* TableViewArrayDataSource */ = {
@@ -141,6 +232,23 @@
 			productName = TableViewArrayDataSource;
 			productReference = B20C4E621651FDCD00AC0E30 /* TableViewArrayDataSource.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B20C4EB0165215EF00AC0E30 /* TableViewArrayDataSourceDelegate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20C4EBE165215F000AC0E30 /* Build configuration list for PBXNativeTarget "TableViewArrayDataSourceDelegate" */;
+			buildPhases = (
+				B20C4EAD165215EF00AC0E30 /* Sources */,
+				B20C4EAE165215EF00AC0E30 /* Frameworks */,
+				B20C4EAF165215EF00AC0E30 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewArrayDataSourceDelegate;
+			productName = TableViewArrayDataSourceDelegate;
+			productReference = B20C4EB1165215EF00AC0E30 /* libTableViewArrayDataSourceDelegate.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -164,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				B20C4E611651FDCD00AC0E30 /* TableViewArrayDataSource */,
+				B20C4EB0165215EF00AC0E30 /* TableViewArrayDataSourceDelegate */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +301,15 @@
 				B20C4E771651FDCD00AC0E30 /* AppDelegate.m in Sources */,
 				B20C4E801651FDCD00AC0E30 /* ViewController.m in Sources */,
 				B20C4E9A1651FF1600AC0E30 /* TableViewArrayDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C4EAD165215EF00AC0E30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C4EC31652162000AC0E30 /* TableViewArrayDataSource.m in Sources */,
+				B20C4EBD165215F000AC0E30 /* TableViewArrayDataSourceDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +406,46 @@
 			};
 			name = Release;
 		};
+		B20C4EBF165215F000AC0E30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewArrayDataSourceDelegate/TableViewArrayDataSourceDelegate-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		B20C4EC0165215F000AC0E30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewArrayDataSourceDelegate/TableViewArrayDataSourceDelegate-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -308,6 +466,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B20C4EBE165215F000AC0E30 /* Build configuration list for PBXNativeTarget "TableViewArrayDataSourceDelegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C4EBF165215F000AC0E30 /* Debug */,
+				B20C4EC0165215F000AC0E30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
