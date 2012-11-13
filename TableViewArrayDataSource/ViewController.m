@@ -17,13 +17,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *array = [NSArray arrayWithObjects:@"Apple", @"Banana", @"Orange", nil];
+    TableViewArrayDataSource *dataSource = [[TableViewArrayDataSource alloc] initWithDataSourceArray:array];
+    dataSource.delegate = self;
+    
+    tableView.delegate = self;
+    tableView.dataSource = dataSource;
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath data:(id)data {
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"FruitCell"];
+    cell.textLabel.text = (NSString *)data;
+    return cell;
+    
 }
 
 @end

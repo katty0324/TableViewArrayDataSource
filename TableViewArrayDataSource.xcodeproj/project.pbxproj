@@ -18,6 +18,7 @@
 		B20C4E7D1651FDCD00AC0E30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B20C4E7C1651FDCD00AC0E30 /* Default-568h@2x.png */; };
 		B20C4E801651FDCD00AC0E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C4E7F1651FDCD00AC0E30 /* ViewController.m */; };
 		B20C4E831651FDCD00AC0E30 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C4E811651FDCD00AC0E30 /* ViewController.xib */; };
+		B20C4E9A1651FF1600AC0E30 /* TableViewArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		B20C4E7E1651FDCD00AC0E30 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B20C4E7F1651FDCD00AC0E30 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B20C4E821651FDCD00AC0E30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B20C4E981651FF1600AC0E30 /* TableViewArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewArrayDataSource.h; path = Classes/TableViewArrayDataSource.h; sourceTree = "<group>"; };
+		B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewArrayDataSource.m; path = Classes/TableViewArrayDataSource.m; sourceTree = "<group>"; };
+		B20C4E9B1652000300AC0E30 /* TableVieArrayDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableVieArrayDataSourceDelegate.h; path = Classes/TableVieArrayDataSourceDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		B20C4E6C1651FDCD00AC0E30 /* TableViewArrayDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				B20C4E971651FEF100AC0E30 /* Classes */,
 				B20C4E751651FDCD00AC0E30 /* AppDelegate.h */,
 				B20C4E761651FDCD00AC0E30 /* AppDelegate.m */,
 				B20C4E7E1651FDCD00AC0E30 /* ViewController.h */,
@@ -105,6 +110,16 @@
 				B20C4E7C1651FDCD00AC0E30 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20C4E971651FEF100AC0E30 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B20C4E981651FF1600AC0E30 /* TableViewArrayDataSource.h */,
+				B20C4E991651FF1600AC0E30 /* TableViewArrayDataSource.m */,
+				B20C4E9B1652000300AC0E30 /* TableVieArrayDataSourceDelegate.h */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +191,7 @@
 				B20C4E731651FDCD00AC0E30 /* main.m in Sources */,
 				B20C4E771651FDCD00AC0E30 /* AppDelegate.m in Sources */,
 				B20C4E801651FDCD00AC0E30 /* ViewController.m in Sources */,
+				B20C4E9A1651FF1600AC0E30 /* TableViewArrayDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
